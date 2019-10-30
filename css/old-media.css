@@ -1,0 +1,272 @@
+@media (min-width: 992px) {
+    .menu {
+        display: block;
+    }
+}
+
+@media (max-width: 992px) {
+
+    .wrapper {
+        max-width: 700px;
+        margin: 0 auto;
+    }
+
+
+    /* header */
+
+    .menu-toggle {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .menu-toggle span {
+        display: block;
+        height: 3px;
+        width: 37px;
+        background: black;
+    }
+
+    .menu-toggle span + span {
+        margin-top: 8px;
+    }
+
+    .menu {
+        display: none;
+        position: absolute;
+        margin-top: 10px;
+        padding: 20px 0;
+        top: 100%;
+        right: 0;
+        width: 200px;
+        background: rgba(0,0,0,0.9);
+    }
+
+    .navigation {
+        position: relative;
+    }
+
+    .menu__link {
+        color: #ffffff;
+        font-family: "A Futurica Lt Thin";
+        font-size: 16px;
+        line-height: 24px;
+        text-transform: uppercase;
+        letter-spacing: -0.19px;
+        margin: 20px 10px;
+    }
+
+    /* services */
+
+    .services {
+        height: 700px;
+    }
+
+    .menu__list {
+        width: 50%;
+    }
+
+    /* form */
+
+    .form {
+        min-height: 1100px;
+        background-color: #1d1d1d;
+    }
+
+    .address {
+        padding: 0 0 50px 250px;
+
+    }
+}
+
+@media (max-width: 770px) {
+
+    .wrapper {
+        max-width: 400px;
+        margin: 0 auto;
+    }
+
+    /* header */
+
+    .banner-wrap h1 {
+        font-size: 30px;
+    }
+
+    .banner-rectangle h3 {
+        font-size: 24px;
+    }
+
+    .btn__custom {
+        max-height: 55px;
+        font-size: 20px;
+    }
+
+    /* services */
+
+    .services {
+        height: 1100px;
+    }
+
+    .services__items {
+        justify-content: center;
+    }
+
+    .content__services {
+        background: center bottom;
+    }
+
+    .menu__list {
+        margin: 30px 0 0 0;
+        width: 30%;
+    }
+
+    .menu__list li {
+        font-weight: normal;
+        float: right;
+    }
+
+    /* about */
+
+    .heading__about {
+        font-weight: normal;
+    }
+
+    .content__about {
+        font-size: 16px;
+        line-height: 20px;
+        font-weight: normal;
+    }
+
+    /* languages */
+
+    .languages {
+        background-size: cover;
+        padding: 60px 0px 50px;
+    }
+
+    .languages__item {
+        text-align: center;
+        margin-top: 20px;
+    }
+
+    .languages__item__title {
+        font-size: 25px;
+        font-weight: normal;
+        line-height: 30px;
+        text-transform: uppercase;
+    }
+
+    .languages__item__text {
+        font-size: 22px;
+        font-weight: normal;
+        line-height: 25px;
+    }
+
+    /* form */
+
+    .form {
+        min-height: 1750px;
+    }
+
+    .form__box {
+        margin: 0 25px;
+    }
+
+    .form__title {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .phone::after {
+        display: none;
+    }
+
+    .social::after {
+        display: none;
+    }
+
+    .address {
+        padding: 0;
+    }
+
+    .contact__item {
+        margin: 30px 10px;
+        text-align: center;
+    }
+}
+
+@media (max-width: 320px) {
+
+    /* header */
+
+    .banner {
+        background-size: cover;
+    }
+
+    .banner-wrap {
+        margin-top: 50px;
+        padding: 0;
+    }
+
+    .banner-wrap h1 {
+        font-size: 27px;
+        font-weight: normal;
+        line-height: 35px;
+    }
+
+    h1 .yellow {
+        font-size: 34px;
+    }
+
+    .banner-rectangle h3 {
+        font-size: 25px;
+        line-height: 30px;
+    }
+
+    .banner-rectangle {
+        padding: 20px;
+    }
+
+    .btn__custom {
+        font-size: 12px;
+        line-height: 20px;
+    }
+
+    /* services */
+
+    .services {
+        height: 1150px;
+    }
+
+    /* about */
+
+    .about {
+        padding-bottom: 10px;
+    }
+
+    .heading__about {
+        font-size: 30px;
+    }
+
+    .content__about {
+        margin-top: 20px;
+    }
+
+    /* form */
+    .form {
+        min-height: 2200px;
+    }
+
+    .phone a{
+        font-size: 18px;
+    }
+
+    .address img {
+        display: block;
+        margin: 0 0 20px 70px;
+        padding: 0;
+    }
+
+}

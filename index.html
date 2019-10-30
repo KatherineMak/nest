@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0,
+    user-scalable=no maximum-scale=1" >
+    <title>Уютное гнёздышко</title>
+
+
+    <link rel="stylesheet" type="text/css" href="lib/bootstrap/bootstrap.min.css"/>
+    <link rel="stylesheet" type="text/css" href="css/normalize.css"/>
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/media.css"/>
+
+    <link href="https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700&display=swap&subset=cyrillic,cyrillic-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
+
+    <script type="text/javascript" src="lib/jquery/jquery-3.4.1.min.js"></script>
+
+</head>
+<body>
+
+    <header>
+    <div class="container">
+        <div class="header__inner">
+
+            <div class="header__part">
+                <div class="logo">
+                    <a href="#"></a>
+                </div>
+                <div class="header__select">
+                    <select>
+                        <option value="1">Санкт-Петербург</option>
+                        <option value="2">Москва</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="header__part">
+                <a  href="#" class="header__btn">
+                    Вход
+                </a>
+
+                <a href="#" class="header__btn header__btn_border">
+                    Подать объявление
+                </a>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+    <section class="banner">
+        <div class="container">
+            <div class="banner__inner">
+                <div class="search-form">
+                    <div class="row justify-content-center">
+                        <div class="search-form__title">
+                            <h1>Снять комнату, квартиру или дом</h1>
+                        </div>
+                    </div>
+                    <div class="row justify-content-center">
+                        <div class="col-md-4">
+                            <div class="search-form__select">
+                                <select>
+                                    <option value="0">Тип жилья</option>
+                                    <option value="1">Квартира</option>
+                                    <option value="2">Дом</option>
+                                    <option value="3">Комната</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <input type="text" class="search-form__input" placeholder="Метро">
+                        </div>
+
+                        <div class="col-md-4">
+                            <ul class="search-form__tab">
+                                <li>
+                                    <input id="search-form__tab1" checked="checked" type="radio" name="tab" />
+                                    <label for="search-form__tab1">Долгосрочно</label>
+                                </li>
+                                <li>
+                                    <input id="search-form__tab2" type="radio" name="tab" />
+                                    <label for="search-form__tab2">Посуточно</label>
+                                </li>
+                            </ul>
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="search-form__row">
+                    <div class="row justify-content-center">
+                        <!--<div class="col-md-3">-->
+                            <!--<div class="btn-group mr-2" role="group" aria-label="First group">-->
+                                <!--<button type="button" class="btn btn-secondary">1</button>-->
+                                <!--<button type="button" class="btn btn-secondary">2</button>-->
+                                <!--<button type="button" class="btn btn-secondary">3</button>-->
+                                <!--<button type="button" class="btn btn-secondary">4</button>-->
+                            <!--</div>-->
+                        <!--</div>-->
+                        <div class="col-md-6">
+                            <div class="search-form__group">
+                                <input type="text" class="search-form__input search-form__input_sm" placeholder="От">
+                                <input type="text" class="search-form__input search-form__input_sm" placeholder="До">
+                                <div class="search-form__checkbox-container">
+                                    <div class="checkbox">
+                                        <input type="checkbox" class="checkbox__input" id="check">
+                                        <label class="checkbox__label" for="check">Без залога</label>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="col-md-3">
+                            <button href="#" class="search-form__btn">Найти</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <div class="services__inner">
+                <div class="services__video">
+                    <img src="img/video.png"/>
+                    <!--<video  width="400" height="300" controls="controls" poster="img/video.png">-->
+                        <!--<source src="https://www.youtube.com/watch?v=NBb2OV2iQCw">-->
+                    <!--</video>-->
+                </div>
+                <div class="services__title">
+                    Посмотрите видео о том, какие мы хорошие и прогрессивные
+                </div>
+                <div class="services__text">
+                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean
+                    massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.
+                    <br>
+                    <br>
+                    Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis
+                    enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut,
+                    imperdiet a, venenatis vitae, justo.
+                </div>
+                <div class="services__social">
+                    <a href="#" class="services__btn services__btn_tg">Канал в телеграме</a>
+                    <a href="#" class="services__btn services__btn_vk">Группа вконтакте</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="about">
+        <div class="container">
+            <div calss="section__inner">
+                <div class="title_gray">Почему мы?</div>
+                <div class="subtitle_gray">Бла-бла-бла какой неистово прикольный текст</div>
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about__item">
+                            <img class="about__item__img" src="img/search.png"/>
+                            <h3 class="about__item__title">Уютный поиск</h3>
+                            <p class="about__item__text">
+                                Воспользуйтесь удобной формой поиска с множеством фильтров,
+                                которых нет в нашей легендарной группе Вконтакте.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about__item">
+                            <img class="about__item__img" src="img/man.png"/>
+                            <h3 class="about__item__title">Не роботы, а люди</h3>
+                            <p class="about__item__text">
+                                Вы сможете найти жильца, близкого по духу,
+                                который сохранит уют в вашем гнездышке.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about__item">
+                            <img class="about__item__img" src="img/comments.png"/>
+                            <h3 class="about__item__title">Жаркие комментарии</h3>
+                            <p class="about__item__text">
+                                Под каждым опубликованным объявлением вы сможете поделиться
+                                своим мнением с окружающими.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="about__item">
+                            <img class="about__item__img" src="img/hands.png"/>
+                            <h3 class="about__item__title">Разногласия – отстой</h3>
+                            <p class="about__item__text">
+                                Зачастую невозможно обойтись без трудностей, как бытовых, так и на уровне самого
+                                обычного человеческого общения, но мы поможем вам найти общий язык.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about__item">
+                            <img class="about__item__img" src="img/lamp.png"/>
+                            <h3 class="about__item__title">Ультрамодерация</h3>
+                            <p class="about__item__text">
+                                Мы тщательно проверяем каждое объявление перед публикацией – если предложенный
+                                вариант покажется вам недопустимым, вы всегда сможете сообщить нам об этом
+                                с помощью кнопки "Пожаловаться".
+                            </p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="about__item">
+                            <img class="about__item__img" src="img/glasses.png"/>
+                            <h3 class="about__item__title">Нам 5 лет</h3>
+                            <p class="about__item__text">
+                                С 2013 года мы помогаем вам найтись, и практика показала – искренние объявления,
+                                описанные в деталях, находят отклик чаще остальных.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="how">
+        <div class="container">
+            <div class="section__inner">
+                <div class="title_gray">Как это работает</div>
+                <div class="subtitle_gray">Пользоваться нашим сервисом просто и приятно</div>
+
+                <div class="how__tabs">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="tab">
+                                <button class="how__tablinks" onclick="openTab(event, 'how-find-nest')" id="defaultOpen">Как найти гнездышко</button> <br>
+                                <button class="how__tablinks" onclick="openTab(event, 'how-rent-nest')">Как сдать гнездышко</button>
+                            </div>
+                        </div>
+                        <div class="col-md-8">
+                            <div id="how-find-nest" class="how__tabcontent">
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h1 class="tabcontent__point">1</h1>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3 class="tabcontent__title">Создайте объявление</h3>
+                                        <p class="tabcontent__text">
+                                            Создать объявление просто: опишите жилье, укажите, сколько и каких людей
+                                            вы ждёте, добавьте фотографии, цену, информацию о местоположении, а также
+                                            можете заполнить дополнительные поля, рассказав побольше о своём гнёздышке.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h1 class="tabcontent__point">2</h1>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
+                                        <p class="tabcontent__text">
+                                            Пообщайтесь с потенциальными жильцами до показа гнездышка, познакомьтесь
+                                            с профилями в социальных сетях, и договоритесь о просмотре.
+                                            Будьте готовы предоставить все необходимые документы!
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h1 class="tabcontent__point">3</h1>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
+                                        <p class="tabcontent__text">
+                                            Встретив ваших будущих жильцов познакомьтесь с ними поближе! После
+                                            знакомства обсудите нюансы и дату въезда, после чего смело заключайте
+                                            договор.
+                                            Поздравляем! У вашего гнёздышка появился уютный хранитель.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div id="how-rent-nest" class="how__tabcontent">
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h1 class="tabcontent__point">1</h1>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
+                                        <p class="tabcontent__text">
+                                            Встретив ваших будущих жильцов познакомьтесь с ними поближе! После
+                                            знакомства обсудите нюансы и дату въезда, после чего смело заключайте
+                                            договор.
+                                            Поздравляем! У вашего гнёздышка появился уютный хранитель.
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h1 class="tabcontent__point">2</h1>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
+                                        <p class="tabcontent__text">
+                                            Пообщайтесь с потенциальными жильцами до показа гнездышка, познакомьтесь
+                                            с профилями в социальных сетях, и договоритесь о просмотре.
+                                            Будьте готовы предоставить все необходимые документы!
+                                        </p>
+                                    </div>
+                                </div>
+
+                                <div class="row">
+                                    <div class="col-md-2">
+                                        <h1 class="tabcontent__point">3</h1>
+                                    </div>
+                                    <div class="col-md-10">
+                                        <h3 class="tabcontent__title">Создайте объявление</h3>
+                                        <p class="tabcontent__text">
+                                            Создать объявление просто: опишите жилье, укажите, сколько и каких людей
+                                            вы ждёте, добавьте фотографии, цену, информацию о местоположении, а также
+                                            можете заполнить дополнительные поля, рассказав побольше о своём гнёздышке.
+                                        </p>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="ads">
+        <div class="container">
+            <div class="section__inner">
+                <div class="title_gray">
+                    Последние добавленные объявления в Санкт-Петербурге
+                </div>
+                <div class="subtitle_gray">
+                    В час публикуется около 100500 объявлений.
+                </div>
+                <div class="ads__items">
+                    <div class="row">
+
+                        <div class="col-md-3">
+                            <div class="ads__item">
+                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                <div class="ads__item-container">
+                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                    <p class="ads__item-warning">Без залога</p>
+                                    <p class="ads__item-metro">Коммендантский проспект</p>
+                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p class="ads__item-price">9 000 ₽</p>
+                                        </div>
+                                        <div class="offset-1 col-sm-4 col__item-like">
+                                            <a href="#" class="ads__item-like">В избранное</a>
+                                        </div>
+                                        <div class="col-sm-3 col__item-comments">
+                                            <a href="#" class="ads__item-comments">5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="ads__item">
+                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                <div class="ads__item-container">
+                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                    <p class="ads__item-warning">Без залога</p>
+                                    <p class="ads__item-metro">Коммендантский проспект</p>
+                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p class="ads__item-price">9 000 ₽</p>
+                                        </div>
+                                        <div class="offset-1 col-sm-4 col__item-like">
+                                            <a href="#" class="ads__item-like">В избранное</a>
+                                        </div>
+                                        <div class="col-sm-3 col__item-comments">
+                                            <a href="#" class="ads__item-comments">5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="ads__item">
+                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                <div class="ads__item-container">
+                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                    <p class="ads__item-warning">Без залога</p>
+                                    <p class="ads__item-metro">Коммендантский проспект</p>
+                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p class="ads__item-price">9 000 ₽</p>
+                                        </div>
+                                        <div class="offset-1 col-sm-4 col__item-like">
+                                            <a href="#" class="ads__item-like">В избранное</a>
+                                        </div>
+                                        <div class="col-sm-3 col__item-comments">
+                                            <a href="#" class="ads__item-comments">5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-3">
+                            <div class="ads__item">
+                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                <div class="ads__item-container">
+                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                    <p class="ads__item-warning">Без залога</p>
+                                    <p class="ads__item-metro">Коммендантский проспект</p>
+                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                    <div class="row">
+                                        <div class="col-sm-4">
+                                            <p class="ads__item-price">9 000 ₽</p>
+                                        </div>
+                                        <div class="offset-1 col-sm-4 col__item-like">
+                                            <a href="#" class="ads__item-like">В избранное</a>
+                                        </div>
+                                        <div class="col-sm-3 col__item-comments">
+                                            <a href="#" class="ads__item-comments">5</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+                    <div class="ads__btn">
+                        <a href="#">Все объявления</a>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="reviews">
+        <div class="container">
+            <div class="section__inner">
+                <div class="title_gray">Отзывы про нас</div>
+                <div class="subtitle_gray">Мы очень креативные, хорошие и добрые</div>
+                <div class="reviews__items">
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="reviews__item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/photo-user.png">
+                                    </div>
+                                    <div class="col-md-8">
+                                            <p class="reviews__item__text">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                                Aenean commodo ligula eget dolor. Aenean massa.
+                                            </p>
+                                            <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="reviews__item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/photo-user.png">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="reviews__item__text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                        <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="reviews__item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/photo-user.png">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="reviews__item__text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                        <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6">
+                            <div class="reviews__item">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <img src="img/photo-user.png">
+                                    </div>
+                                    <div class="col-md-8">
+                                        <p class="reviews__item__text">
+                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                            Aenean commodo ligula eget dolor. Aenean massa.
+                                        </p>
+                                        <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer__inner">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="footer__logo">
+                            <a href="#"></a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer__section">
+                            <p class="footer__title">Разделы сайта</p>
+                            <a class="footer__list-link" href="#">Найти квартиру</a>
+                            <a class="footer__list-link" href="#">Сдать квартиру</a>
+                            <a class="footer__list-link" href="#">Вопросы и ответы</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer__section">
+                            <p class="footer__title">Информация</p>
+                            <a class="footer__list-link" href="#">Пользовательское соглашение</a>
+                            <a class="footer__list-link" href="#">Обработка персональных данных</a>
+                            <a class="footer__list-link" href="#">Договор аренды</a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-3">
+                        <div class="footer__section">
+                            <p class="footer__title">Мы в соцсетях</p>
+                            <div class="footer__social-links">
+                                <div class="social-link_tg"><a href="#"></a></div>
+                                <div class="social-link_vk"><a href="#"></a></div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="footer__bottom">
+                <div class="row">
+                    <div class="offset-3 col-md-3">
+                        <a href="mailto:equality.hello@gnezdo.ru" class="contacts">
+                            hello@gnezdo.ru
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <a href="tel:+37544727-70-70" class="contacts">
+                            8 (981) 783-45-76
+                        </a>
+                    </div>
+                    <div class="col-md-3">
+                        <p class="copyright">
+                            © 2018 «Уютное гнездышко»
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script type="text/javascript" src="js/main.js"></script>
+    <script type="text/javascript" src="js/select.js"></script>
+    <script type="text/javascript" src="js/tab.js"></script>
+
+</body>
+</html>
