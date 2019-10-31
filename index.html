@@ -30,6 +30,7 @@
                 </div>
                 <div class="header__select">
                     <select>
+                        <option value="0">Ваш город</option>
                         <option value="1">Санкт-Петербург</option>
                         <option value="2">Москва</option>
                     </select>
@@ -59,49 +60,73 @@
                             <h1>Снять комнату, квартиру или дом</h1>
                         </div>
                     </div>
-                    <div class="row justify-content-center">
-                        <div class="col-md-4">
-                            <div class="search-form__select">
-                                <select>
-                                    <option value="0">Тип жилья</option>
-                                    <option value="1">Квартира</option>
-                                    <option value="2">Дом</option>
-                                    <option value="3">Комната</option>
-                                </select>
+                    <div class="search-form__row-1">
+                        <div class="row justify-content-center">
+                            <div class="search__col">
+                                <!--<div class="col-md-4 search__col">-->
+                                <div class="search-form__select">
+                                    <select>
+                                        <option value="0">Тип жилья</option>
+                                        <option value="1">Квартира</option>
+                                        <option value="2">Дом</option>
+                                        <option value="3">Комната</option>
+                                    </select>
+                                </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-4">
-                            <input type="text" class="search-form__input" placeholder="Метро">
-                        </div>
+                            <div class="search__col">
+                                <!--<div class="col-md-4 search__col">-->
+                                <input type="text" class="search-form__input" placeholder="Метро">
+                            </div>
 
-                        <div class="col-md-4">
-                            <ul class="search-form__tab">
-                                <li>
-                                    <input id="search-form__tab1" checked="checked" type="radio" name="tab" />
-                                    <label for="search-form__tab1">Долгосрочно</label>
-                                </li>
-                                <li>
-                                    <input id="search-form__tab2" type="radio" name="tab" />
-                                    <label for="search-form__tab2">Посуточно</label>
-                                </li>
-                            </ul>
-                        </div>
+                            <div class="search__col">
+                                <!--<div class="col-md-4 search__col">-->
+                                <ul class="search-form__tab">
+                                    <li>
+                                        <input id="search-form__tab1" checked="checked" type="radio" name="tab"/>
+                                        <label for="search-form__tab1">Долгосрочно</label>
+                                    </li>
+                                    <li>
+                                        <input id="search-form__tab2" type="radio" name="tab"/>
+                                        <label for="search-form__tab2">Посуточно</label>
+                                    </li>
+                                </ul>
+                            </div>
 
+                        </div>
                     </div>
+
                 </div>
 
                 <div class="search-form__row">
                     <div class="row justify-content-center">
+                        <div class="search__col">
                         <!--<div class="col-md-3">-->
-                            <!--<div class="btn-group mr-2" role="group" aria-label="First group">-->
-                                <!--<button type="button" class="btn btn-secondary">1</button>-->
-                                <!--<button type="button" class="btn btn-secondary">2</button>-->
-                                <!--<button type="button" class="btn btn-secondary">3</button>-->
-                                <!--<button type="button" class="btn btn-secondary">4</button>-->
-                            <!--</div>-->
-                        <!--</div>-->
-                        <div class="col-md-6">
+                            <ul class="search-form__tab-rooms">
+                                <li>
+                                    <input id="search-form__tab-room1" checked="checked" type="radio" name="tab-room"/>
+                                    <label for="search-form__tab-room1">1</label>
+                                </li>
+                                <li>
+                                    <input id="search-form__tab-room2" type="radio" name="tab-room"/>
+                                    <label for="search-form__tab-room2">2</label>
+                                </li>
+                                <li>
+                                    <input id="search-form__tab-room3" type="radio" name="tab-room"/>
+                                    <label for="search-form__tab-room3">3</label>
+                                </li>
+                                <li>
+                                    <input id="search-form__tab-room4" type="radio" name="tab-room"/>
+                                    <label for="search-form__tab-room4">4+</label>
+                                </li>
+                                <li>
+                                    <input id="search-form__tab-room5" type="radio" name="tab-room"/>
+                                    <label for="search-form__tab-room5">Студия</label>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="search__col">
+                        <!--<div class="col-md-4">-->
                             <div class="search-form__group">
                                 <input type="text" class="search-form__input search-form__input_sm" placeholder="От">
                                 <input type="text" class="search-form__input search-form__input_sm" placeholder="До">
@@ -114,7 +139,8 @@
                             </div>
 
                         </div>
-                        <div class="col-md-3">
+                        <div class="search__col">
+                        <!--<div class="col-md-3">-->
                             <button href="#" class="search-form__btn">Найти</button>
                         </div>
                     </div>
@@ -127,10 +153,11 @@
         <div class="container">
             <div class="services__inner">
                 <div class="services__video">
-                    <img src="img/video.png"/>
-                    <!--<video  width="400" height="300" controls="controls" poster="img/video.png">-->
-                        <!--<source src="https://www.youtube.com/watch?v=NBb2OV2iQCw">-->
-                    <!--</video>-->
+                    <video  width="745" height="440" controls="controls" poster="img/video.png">
+                    </video>
+                    <!--<iframe width="750" height="460" src="https://www.youtube.com/embed/NBb2OV2iQCw"-->
+                            <!--frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
+                            <!--allowfullscreen></iframe>-->
                 </div>
                 <div class="services__title">
                     Посмотрите видео о том, какие мы хорошие и прогрессивные
@@ -228,308 +255,311 @@
         </div>
     </section>
 
-    <section class="how">
-        <div class="container">
-            <div class="section__inner">
-                <div class="title_gray">Как это работает</div>
-                <div class="subtitle_gray">Пользоваться нашим сервисом просто и приятно</div>
+    <div class="ellipse-bg">
 
-                <div class="how__tabs">
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="tab">
-                                <button class="how__tablinks" onclick="openTab(event, 'how-find-nest')" id="defaultOpen">Как найти гнездышко</button> <br>
-                                <button class="how__tablinks" onclick="openTab(event, 'how-rent-nest')">Как сдать гнездышко</button>
+        <section class="how">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="title_gray">Как это работает</div>
+                    <div class="subtitle_gray">Пользоваться нашим сервисом просто и приятно</div>
+
+                    <div class="how__tabs">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="tab">
+                                    <button class="how__tablinks" onclick="openTab(event, 'how-find-nest')" id="defaultOpen">Как найти гнездышко</button> <br>
+                                    <button class="how__tablinks" onclick="openTab(event, 'how-rent-nest')">Как сдать гнездышко</button>
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-md-8">
-                            <div id="how-find-nest" class="how__tabcontent">
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <h1 class="tabcontent__point">1</h1>
+                            <div class="col-md-8">
+                                <div id="how-find-nest" class="how__tabcontent">
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h1 class="tabcontent__point">1</h1>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3 class="tabcontent__title">Создайте объявление</h3>
+                                            <p class="tabcontent__text">
+                                                Создать объявление просто: опишите жилье, укажите, сколько и каких людей
+                                                вы ждёте, добавьте фотографии, цену, информацию о местоположении, а также
+                                                можете заполнить дополнительные поля, рассказав побольше о своём гнёздышке.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-10">
-                                        <h3 class="tabcontent__title">Создайте объявление</h3>
-                                        <p class="tabcontent__text">
-                                            Создать объявление просто: опишите жилье, укажите, сколько и каких людей
-                                            вы ждёте, добавьте фотографии, цену, информацию о местоположении, а также
-                                            можете заполнить дополнительные поля, рассказав побольше о своём гнёздышке.
-                                        </p>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h1 class="tabcontent__point">2</h1>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
+                                            <p class="tabcontent__text">
+                                                Пообщайтесь с потенциальными жильцами до показа гнездышка, познакомьтесь
+                                                с профилями в социальных сетях, и договоритесь о просмотре.
+                                                Будьте готовы предоставить все необходимые документы!
+                                            </p>
+                                        </div>
                                     </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h1 class="tabcontent__point">3</h1>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
+                                            <p class="tabcontent__text">
+                                                Встретив ваших будущих жильцов познакомьтесь с ними поближе! После
+                                                знакомства обсудите нюансы и дату въезда, после чего смело заключайте
+                                                договор.
+                                                Поздравляем! У вашего гнёздышка появился уютный хранитель.
+                                            </p>
+                                        </div>
+                                    </div>
+
                                 </div>
 
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <h1 class="tabcontent__point">2</h1>
+                                <div id="how-rent-nest" class="how__tabcontent">
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h1 class="tabcontent__point">1</h1>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
+                                            <p class="tabcontent__text">
+                                                Встретив ваших будущих жильцов познакомьтесь с ними поближе! После
+                                                знакомства обсудите нюансы и дату въезда, после чего смело заключайте
+                                                договор.
+                                                Поздравляем! У вашего гнёздышка появился уютный хранитель.
+                                            </p>
+                                        </div>
                                     </div>
-                                    <div class="col-md-10">
-                                        <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
-                                        <p class="tabcontent__text">
-                                            Пообщайтесь с потенциальными жильцами до показа гнездышка, познакомьтесь
-                                            с профилями в социальных сетях, и договоритесь о просмотре.
-                                            Будьте готовы предоставить все необходимые документы!
-                                        </p>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h1 class="tabcontent__point">2</h1>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
+                                            <p class="tabcontent__text">
+                                                Пообщайтесь с потенциальными жильцами до показа гнездышка, познакомьтесь
+                                                с профилями в социальных сетях, и договоритесь о просмотре.
+                                                Будьте готовы предоставить все необходимые документы!
+                                            </p>
+                                        </div>
                                     </div>
+
+                                    <div class="row">
+                                        <div class="col-md-2">
+                                            <h1 class="tabcontent__point">3</h1>
+                                        </div>
+                                        <div class="col-md-10">
+                                            <h3 class="tabcontent__title">Создайте объявление</h3>
+                                            <p class="tabcontent__text">
+                                                Создать объявление просто: опишите жилье, укажите, сколько и каких людей
+                                                вы ждёте, добавьте фотографии, цену, информацию о местоположении, а также
+                                                можете заполнить дополнительные поля, рассказав побольше о своём гнёздышке.
+                                            </p>
+                                        </div>
+                                    </div>
+
                                 </div>
-
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <h1 class="tabcontent__point">3</h1>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
-                                        <p class="tabcontent__text">
-                                            Встретив ваших будущих жильцов познакомьтесь с ними поближе! После
-                                            знакомства обсудите нюансы и дату въезда, после чего смело заключайте
-                                            договор.
-                                            Поздравляем! У вашего гнёздышка появился уютный хранитель.
-                                        </p>
-                                    </div>
-                                </div>
-
-                            </div>
-
-                            <div id="how-rent-nest" class="how__tabcontent">
-
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <h1 class="tabcontent__point">1</h1>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
-                                        <p class="tabcontent__text">
-                                            Встретив ваших будущих жильцов познакомьтесь с ними поближе! После
-                                            знакомства обсудите нюансы и дату въезда, после чего смело заключайте
-                                            договор.
-                                            Поздравляем! У вашего гнёздышка появился уютный хранитель.
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <h1 class="tabcontent__point">2</h1>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
-                                        <p class="tabcontent__text">
-                                            Пообщайтесь с потенциальными жильцами до показа гнездышка, познакомьтесь
-                                            с профилями в социальных сетях, и договоритесь о просмотре.
-                                            Будьте готовы предоставить все необходимые документы!
-                                        </p>
-                                    </div>
-                                </div>
-
-                                <div class="row">
-                                    <div class="col-md-2">
-                                        <h1 class="tabcontent__point">3</h1>
-                                    </div>
-                                    <div class="col-md-10">
-                                        <h3 class="tabcontent__title">Создайте объявление</h3>
-                                        <p class="tabcontent__text">
-                                            Создать объявление просто: опишите жилье, укажите, сколько и каких людей
-                                            вы ждёте, добавьте фотографии, цену, информацию о местоположении, а также
-                                            можете заполнить дополнительные поля, рассказав побольше о своём гнёздышке.
-                                        </p>
-                                    </div>
-                                </div>
-
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="ads">
-        <div class="container">
-            <div class="section__inner">
-                <div class="title_gray">
-                    Последние добавленные объявления в Санкт-Петербурге
-                </div>
-                <div class="subtitle_gray">
-                    В час публикуется около 100500 объявлений.
-                </div>
-                <div class="ads__items">
-                    <div class="row">
+        <section class="ads">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="title_gray">
+                        Последние добавленные объявления в Санкт-Петербурге
+                    </div>
+                    <div class="subtitle_gray">
+                        В час публикуется около 100500 объявлений.
+                    </div>
+                    <div class="ads__items">
+                        <div class="row">
 
-                        <div class="col-md-3">
-                            <div class="ads__item">
-                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                <div class="ads__item-container">
-                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                    <p class="ads__item-warning">Без залога</p>
-                                    <p class="ads__item-metro">Коммендантский проспект</p>
-                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <p class="ads__item-price">9 000 ₽</p>
-                                        </div>
-                                        <div class="offset-1 col-sm-4 col__item-like">
-                                            <a href="#" class="ads__item-like">В избранное</a>
-                                        </div>
-                                        <div class="col-sm-3 col__item-comments">
-                                            <a href="#" class="ads__item-comments">5</a>
+                            <div class="col-md-3">
+                                <div class="ads__item">
+                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                    <div class="ads__item-container">
+                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="ads__item-warning">Без залога</p>
+                                        <p class="ads__item-metro">Коммендантский проспект</p>
+                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p class="ads__item-price">9 000 ₽</p>
+                                            </div>
+                                            <div class="offset-1 col-sm-4 col__item-like">
+                                                <a href="#" class="ads__item-like">В избранное</a>
+                                            </div>
+                                            <div class="col-sm-3 col__item-comments">
+                                                <a href="#" class="ads__item-comments">5</a>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
+
+                            <div class="col-md-3">
+                                <div class="ads__item">
+                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                    <div class="ads__item-container">
+                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="ads__item-warning">Без залога</p>
+                                        <p class="ads__item-metro">Коммендантский проспект</p>
+                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p class="ads__item-price">9 000 ₽</p>
+                                            </div>
+                                            <div class="offset-1 col-sm-4 col__item-like">
+                                                <a href="#" class="ads__item-like">В избранное</a>
+                                            </div>
+                                            <div class="col-sm-3 col__item-comments">
+                                                <a href="#" class="ads__item-comments">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="ads__item">
+                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                    <div class="ads__item-container">
+                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="ads__item-warning">Без залога</p>
+                                        <p class="ads__item-metro">Коммендантский проспект</p>
+                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p class="ads__item-price">9 000 ₽</p>
+                                            </div>
+                                            <div class="offset-1 col-sm-4 col__item-like">
+                                                <a href="#" class="ads__item-like">В избранное</a>
+                                            </div>
+                                            <div class="col-sm-3 col__item-comments">
+                                                <a href="#" class="ads__item-comments">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-3">
+                                <div class="ads__item">
+                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
+                                    <div class="ads__item-container">
+                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="ads__item-warning">Без залога</p>
+                                        <p class="ads__item-metro">Коммендантский проспект</p>
+                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="row">
+                                            <div class="col-sm-4">
+                                                <p class="ads__item-price">9 000 ₽</p>
+                                            </div>
+                                            <div class="offset-1 col-sm-4 col__item-like">
+                                                <a href="#" class="ads__item-like">В избранное</a>
+                                            </div>
+                                            <div class="col-sm-3 col__item-comments">
+                                                <a href="#" class="ads__item-comments">5</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
                         </div>
 
-                        <div class="col-md-3">
-                            <div class="ads__item">
-                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                <div class="ads__item-container">
-                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                    <p class="ads__item-warning">Без залога</p>
-                                    <p class="ads__item-metro">Коммендантский проспект</p>
-                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <p class="ads__item-price">9 000 ₽</p>
-                                        </div>
-                                        <div class="offset-1 col-sm-4 col__item-like">
-                                            <a href="#" class="ads__item-like">В избранное</a>
-                                        </div>
-                                        <div class="col-sm-3 col__item-comments">
-                                            <a href="#" class="ads__item-comments">5</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
 
-                        <div class="col-md-3">
-                            <div class="ads__item">
-                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                <div class="ads__item-container">
-                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                    <p class="ads__item-warning">Без залога</p>
-                                    <p class="ads__item-metro">Коммендантский проспект</p>
-                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <p class="ads__item-price">9 000 ₽</p>
-                                        </div>
-                                        <div class="offset-1 col-sm-4 col__item-like">
-                                            <a href="#" class="ads__item-like">В избранное</a>
-                                        </div>
-                                        <div class="col-sm-3 col__item-comments">
-                                            <a href="#" class="ads__item-comments">5</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-md-3">
-                            <div class="ads__item">
-                                <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                <div class="ads__item-container">
-                                    <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                    <p class="ads__item-warning">Без залога</p>
-                                    <p class="ads__item-metro">Коммендантский проспект</p>
-                                    <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                    <div class="row">
-                                        <div class="col-sm-4">
-                                            <p class="ads__item-price">9 000 ₽</p>
-                                        </div>
-                                        <div class="offset-1 col-sm-4 col__item-like">
-                                            <a href="#" class="ads__item-like">В избранное</a>
-                                        </div>
-                                        <div class="col-sm-3 col__item-comments">
-                                            <a href="#" class="ads__item-comments">5</a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                        <div class="ads__btn">
+                            <a href="#">Все объявления</a>
                         </div>
 
                     </div>
-
-
-                    <div class="ads__btn">
-                        <a href="#">Все объявления</a>
-                    </div>
-
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section class="reviews">
-        <div class="container">
-            <div class="section__inner">
-                <div class="title_gray">Отзывы про нас</div>
-                <div class="subtitle_gray">Мы очень креативные, хорошие и добрые</div>
-                <div class="reviews__items">
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="reviews__item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="img/photo-user.png">
-                                    </div>
-                                    <div class="col-md-8">
+        <section class="reviews">
+            <div class="container">
+                <div class="section__inner">
+                    <div class="title_gray">Отзывы про нас</div>
+                    <div class="subtitle_gray">Мы очень креативные, хорошие и добрые</div>
+                    <div class="reviews__items">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="reviews__item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/photo-user.png">
+                                        </div>
+                                        <div class="col-md-8">
                                             <p class="reviews__item__text">
                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                                 Aenean commodo ligula eget dolor. Aenean massa.
                                             </p>
                                             <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="col-md-6">
+                                <div class="reviews__item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/photo-user.png">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="reviews__item__text">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                                Aenean commodo ligula eget dolor. Aenean massa.
+                                            </p>
+                                            <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="col-md-6">
-                            <div class="reviews__item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="img/photo-user.png">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p class="reviews__item__text">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            Aenean commodo ligula eget dolor. Aenean massa.
-                                        </p>
-                                        <h3 class="reviews__item__title">Владимир Охотник</h3>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="reviews__item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="img/photo-user.png">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p class="reviews__item__text">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            Aenean commodo ligula eget dolor. Aenean massa.
-                                        </p>
-                                        <h3 class="reviews__item__title">Владимир Охотник</h3>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="reviews__item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/photo-user.png">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="reviews__item__text">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                                Aenean commodo ligula eget dolor. Aenean massa.
+                                            </p>
+                                            <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
 
-                        <div class="col-md-6">
-                            <div class="reviews__item">
-                                <div class="row">
-                                    <div class="col-md-4">
-                                        <img src="img/photo-user.png">
-                                    </div>
-                                    <div class="col-md-8">
-                                        <p class="reviews__item__text">
-                                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
-                                            Aenean commodo ligula eget dolor. Aenean massa.
-                                        </p>
-                                        <h3 class="reviews__item__title">Владимир Охотник</h3>
+                            <div class="col-md-6">
+                                <div class="reviews__item">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img src="img/photo-user.png">
+                                        </div>
+                                        <div class="col-md-8">
+                                            <p class="reviews__item__text">
+                                                Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
+                                                Aenean commodo ligula eget dolor. Aenean massa.
+                                            </p>
+                                            <h3 class="reviews__item__title">Владимир Охотник</h3>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -537,8 +567,9 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+
+    </div>
 
     <footer>
         <div class="container">
@@ -604,7 +635,7 @@
     </footer>
 
     <script type="text/javascript" src="js/main.js"></script>
-    <script type="text/javascript" src="js/select.js"></script>
+    <script type="text/javascript" src="js/select-header.js"></script>
     <script type="text/javascript" src="js/tab.js"></script>
 
 </body>
