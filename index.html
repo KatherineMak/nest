@@ -2,8 +2,7 @@
 <html lang="ru">
 <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0,
-    user-scalable=no maximum-scale=1" >
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Уютное гнёздышко</title>
 
 
@@ -16,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
 
     <script type="text/javascript" src="lib/jquery/jquery-3.4.1.min.js"></script>
+    <script src="https://kit.fontawesome.com/1281b6aebb.js" crossorigin="anonymous"></script>
 
 </head>
 <body>
@@ -23,7 +23,6 @@
     <header>
     <div class="container">
         <div class="header__inner">
-
             <div class="header__part">
                 <div class="logo">
                     <a href="#"></a>
@@ -46,7 +45,6 @@
                     Подать объявление
                 </a>
             </div>
-
         </div>
     </div>
 </header>
@@ -54,54 +52,48 @@
     <section class="banner">
         <div class="container">
             <div class="banner__inner">
-                <div class="search-form">
-                    <div class="row justify-content-center">
-                        <div class="search-form__title">
-                            <h1>Снять комнату, квартиру или дом</h1>
+
+                <div class="row justify-content-center">
+                    <div class="search-form__title">
+                        Снять комнату, квартиру или дом
+                    </div>
+                </div>
+
+                <div class="banner__row">
+
+                    <div class="search__col">
+                        <div class="search-form__select">
+                            <select>
+                                <option value="0">Тип жилья</option>
+                                <option value="1">Квартира</option>
+                                <option value="2">Дом</option>
+                                <option value="3">Комната</option>
+                            </select>
                         </div>
                     </div>
-                    <div class="search-form__row-1">
-                        <div class="row justify-content-center">
-                            <div class="search__col">
-                                <!--<div class="col-md-4 search__col">-->
-                                <div class="search-form__select">
-                                    <select>
-                                        <option value="0">Тип жилья</option>
-                                        <option value="1">Квартира</option>
-                                        <option value="2">Дом</option>
-                                        <option value="3">Комната</option>
-                                    </select>
-                                </div>
-                            </div>
 
-                            <div class="search__col">
-                                <!--<div class="col-md-4 search__col">-->
-                                <input type="text" class="search-form__input" placeholder="Метро">
-                            </div>
+                    <div class="search__col-middle">
+                        <input type="text" class="search-form__input" placeholder="Метро">
+                    </div>
 
-                            <div class="search__col">
-                                <!--<div class="col-md-4 search__col">-->
-                                <ul class="search-form__tab">
-                                    <li>
-                                        <input id="search-form__tab1" checked="checked" type="radio" name="tab"/>
-                                        <label for="search-form__tab1">Долгосрочно</label>
-                                    </li>
-                                    <li>
-                                        <input id="search-form__tab2" type="radio" name="tab"/>
-                                        <label for="search-form__tab2">Посуточно</label>
-                                    </li>
-                                </ul>
-                            </div>
-
-                        </div>
+                    <div class="search__col">
+                        <ul class="search-form__tab">
+                            <li>
+                                <input id="search-form__tab1" checked="checked" type="radio" name="tab"/>
+                                <label for="search-form__tab1">Долгосрочно</label>
+                            </li>
+                            <li>
+                                <input id="search-form__tab2" type="radio" name="tab"/>
+                                <label for="search-form__tab2">Посуточно</label>
+                            </li>
+                        </ul>
                     </div>
 
                 </div>
 
-                <div class="search-form__row">
-                    <div class="row justify-content-center">
+                <div class="banner__row">
                         <div class="search__col">
-                        <!--<div class="col-md-3">-->
+
                             <ul class="search-form__tab-rooms">
                                 <li>
                                     <input id="search-form__tab-room1" checked="checked" type="radio" name="tab-room"/>
@@ -125,8 +117,8 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="search__col">
-                        <!--<div class="col-md-4">-->
+
+                        <div class="search__col-middle">
                             <div class="search-form__group">
                                 <input type="text" class="search-form__input search-form__input_sm" placeholder="От">
                                 <input type="text" class="search-form__input search-form__input_sm" placeholder="До">
@@ -139,26 +131,36 @@
                             </div>
 
                         </div>
+
                         <div class="search__col">
-                        <!--<div class="col-md-3">-->
                             <button href="#" class="search-form__btn">Найти</button>
                         </div>
+
                     </div>
+
+                <div class="banner__btn">
+                    <a href="#services" class="banner__btn-arrow"><i class="fas fa-chevron-down"></i></a>
                 </div>
+
             </div>
         </div>
     </section>
 
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="services__inner">
-                <div class="services__video">
-                    <video  width="745" height="440" controls="controls" poster="img/video.png">
-                    </video>
-                    <!--<iframe width="750" height="460" src="https://www.youtube.com/embed/NBb2OV2iQCw"-->
-                            <!--frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"-->
-                            <!--allowfullscreen></iframe>-->
+
+                <div class="videoWrapper videoWrapper169 js-videoWrapper">
+                    <iframe class="videoIframe js-videoIframe" src=""
+                            frameborder="0" allowTransparency="true" allowfullscreen
+                            data-src="https://www.youtube.com/embed/hgzzLIa-93c?autoplay=1& modestbranding=1&rel=0&hl=sv">
+                    </iframe>
+
+                    <button class="videoPoster js-videoPoster">
+                        Play video
+                    </button>
                 </div>
+
                 <div class="services__title">
                     Посмотрите видео о том, какие мы хорошие и прогрессивные
                 </div>
@@ -172,8 +174,8 @@
                     imperdiet a, venenatis vitae, justo.
                 </div>
                 <div class="services__social">
-                    <a href="#" class="services__btn services__btn_tg">Канал в телеграме</a>
-                    <a href="#" class="services__btn services__btn_vk">Группа вконтакте</a>
+                    <a href="#" class="services__btn"><span class="services__btn_tg">Канал&nbsp;в&nbsp;телеграме</span></a>
+                    <a href="#" class="services__btn"><span class="services__btn_vk">Группа&nbsp;вконтакте</span></a>
                 </div>
             </div>
         </div>
@@ -187,7 +189,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about__item">
-                            <img class="about__item__img" src="img/search.png"/>
+                            <div class="about__item__img-container"
+                                 style="background-image: url('img/search.png')">
+                            </div>
                             <h3 class="about__item__title">Уютный поиск</h3>
                             <p class="about__item__text">
                                 Воспользуйтесь удобной формой поиска с множеством фильтров,
@@ -197,7 +201,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="about__item">
-                            <img class="about__item__img" src="img/man.png"/>
+                            <div class="about__item__img-container"
+                                 style="background-image: url('img/man.png')">
+                            </div>
                             <h3 class="about__item__title">Не роботы, а люди</h3>
                             <p class="about__item__text">
                                 Вы сможете найти жильца, близкого по духу,
@@ -207,7 +213,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="about__item">
-                            <img class="about__item__img" src="img/comments.png"/>
+                            <div class="about__item__img-container"
+                                 style="background-image: url('img/comments.png')">
+                            </div>
                             <h3 class="about__item__title">Жаркие комментарии</h3>
                             <p class="about__item__text">
                                 Под каждым опубликованным объявлением вы сможете поделиться
@@ -220,7 +228,9 @@
                 <div class="row">
                     <div class="col-md-4">
                         <div class="about__item">
-                            <img class="about__item__img" src="img/hands.png"/>
+                            <div class="about__item__img-container"
+                                 style="background-image: url('img/hands.png')">
+                            </div>
                             <h3 class="about__item__title">Разногласия – отстой</h3>
                             <p class="about__item__text">
                                 Зачастую невозможно обойтись без трудностей, как бытовых, так и на уровне самого
@@ -230,7 +240,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="about__item">
-                            <img class="about__item__img" src="img/lamp.png"/>
+                            <div class="about__item__img-container"
+                                 style="background-image: url('img/lamp.png')">
+                            </div>
                             <h3 class="about__item__title">Ультрамодерация</h3>
                             <p class="about__item__text">
                                 Мы тщательно проверяем каждое объявление перед публикацией – если предложенный
@@ -241,7 +253,9 @@
                     </div>
                     <div class="col-md-4">
                         <div class="about__item">
-                            <img class="about__item__img" src="img/glasses.png"/>
+                            <div class="about__item__img-container"
+                                 style="background-image: url('img/glasses.png')">
+                            </div>
                             <h3 class="about__item__title">Нам 5 лет</h3>
                             <p class="about__item__text">
                                 С 2013 года мы помогаем вам найтись, и практика показала – искренние объявления,
@@ -267,7 +281,7 @@
                         <div class="row">
                             <div class="col-md-4">
                                 <div class="tab">
-                                    <button class="how__tablinks" onclick="openTab(event, 'how-find-nest')" id="defaultOpen">Как найти гнездышко</button> <br>
+                                    <button class="how__tablinks" onclick="openTab(event, 'how-find-nest')" id="defaultOpen"><div class="tab__inner">Как найти гнездышко</div></button> <br>
                                     <button class="how__tablinks" onclick="openTab(event, 'how-rent-nest')">Как сдать гнездышко</button>
                                 </div>
                             </div>
@@ -275,7 +289,7 @@
                                 <div id="how-find-nest" class="how__tabcontent">
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <h1 class="tabcontent__point">1</h1>
+                                            <h2 class="tabcontent__point">1</h2>
                                         </div>
                                         <div class="col-md-10">
                                             <h3 class="tabcontent__title">Создайте объявление</h3>
@@ -289,7 +303,7 @@
 
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <h1 class="tabcontent__point">2</h1>
+                                            <h2 class="tabcontent__point">2</h2>
                                         </div>
                                         <div class="col-md-10">
                                             <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
@@ -303,7 +317,7 @@
 
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <h1 class="tabcontent__point">3</h1>
+                                            <h2 class="tabcontent__point">3</h2>
                                         </div>
                                         <div class="col-md-10">
                                             <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
@@ -322,7 +336,7 @@
 
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <h1 class="tabcontent__point">1</h1>
+                                            <h2 class="tabcontent__point">1</h2>
                                         </div>
                                         <div class="col-md-10">
                                             <h3 class="tabcontent__title">Приглашайте жильцов!</h3>
@@ -337,7 +351,7 @@
 
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <h1 class="tabcontent__point">2</h1>
+                                            <h2 class="tabcontent__point">2</h2>
                                         </div>
                                         <div class="col-md-10">
                                             <h3 class="tabcontent__title">Познакомьтесь поближе</h3>
@@ -351,7 +365,7 @@
 
                                     <div class="row">
                                         <div class="col-md-2">
-                                            <h1 class="tabcontent__point">3</h1>
+                                            <h2 class="tabcontent__point">3</h2>
                                         </div>
                                         <div class="col-md-10">
                                             <h3 class="tabcontent__title">Создайте объявление</h3>
@@ -380,108 +394,114 @@
                     <div class="subtitle_gray">
                         В час публикуется около 100500 объявлений.
                     </div>
-                    <div class="ads__items">
-                        <div class="row">
+                    <div class="ads__cards">
+                        <div class="row justify-content-center">
 
-                            <div class="col-md-3">
-                                <div class="ads__item">
-                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                    <div class="ads__item-container">
-                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                        <p class="ads__item-warning">Без залога</p>
-                                        <p class="ads__item-metro">Коммендантский проспект</p>
-                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <p class="ads__item-price">9 000 ₽</p>
-                                            </div>
-                                            <div class="offset-1 col-sm-4 col__item-like">
-                                                <a href="#" class="ads__item-like">В избранное</a>
-                                            </div>
-                                            <div class="col-sm-3 col__item-comments">
-                                                <a href="#" class="ads__item-comments">5</a>
+                            <div class="col-lg-3 col-md-5 col-ms-4">
+                                <div class="ads__card">
+                                    <img class="card__img" src="img/ads-img.png" alt="Ads">
+                                    <div class="card__container">
+                                        <h3 class="card__title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="card__warning">Без залога</p>
+                                        <p class="card__metro">Коммендантский проспект</p>
+                                        <p class="card__address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="card__bottom-details">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <p class="card__price">9&nbsp;000&nbsp;₽</p>
+                                                </div>
+                                                <div class="offset-1 col-sm-4 col__card-like">
+                                                    <a href="#" class="card__like">В избранное</a>
+                                                </div>
+                                                <div class="col-sm-3 col__card-comments">
+                                                    <a href="#" class="card__comments">5</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
-                                <div class="ads__item">
-                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                    <div class="ads__item-container">
-                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                        <p class="ads__item-warning">Без залога</p>
-                                        <p class="ads__item-metro">Коммендантский проспект</p>
-                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <p class="ads__item-price">9 000 ₽</p>
-                                            </div>
-                                            <div class="offset-1 col-sm-4 col__item-like">
-                                                <a href="#" class="ads__item-like">В избранное</a>
-                                            </div>
-                                            <div class="col-sm-3 col__item-comments">
-                                                <a href="#" class="ads__item-comments">5</a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-md-3">
-                                <div class="ads__item">
-                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                    <div class="ads__item-container">
-                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                        <p class="ads__item-warning">Без залога</p>
-                                        <p class="ads__item-metro">Коммендантский проспект</p>
-                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <p class="ads__item-price">9 000 ₽</p>
-                                            </div>
-                                            <div class="offset-1 col-sm-4 col__item-like">
-                                                <a href="#" class="ads__item-like">В избранное</a>
-                                            </div>
-                                            <div class="col-sm-3 col__item-comments">
-                                                <a href="#" class="ads__item-comments">5</a>
+                            <div class="col-lg-3 col-md-5">
+                                <div class="ads__card">
+                                    <img class="card__img" src="img/ads-img.png" alt="Ads">
+                                    <div class="card__container">
+                                        <h3 class="card__title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="card__warning">Без залога</p>
+                                        <p class="card__metro">Коммендантский проспект</p>
+                                        <p class="card__address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="card__bottom-details">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <p class="card__price">9&nbsp;000&nbsp;₽</p>
+                                                </div>
+                                                <div class="offset-1 col-sm-4 col__card-like">
+                                                    <a href="#" class="card__like">В избранное</a>
+                                                </div>
+                                                <div class="col-sm-3 col__card-comments">
+                                                    <a href="#" class="card__comments">5</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
 
-                            <div class="col-md-3">
-                                <div class="ads__item">
-                                    <img class="ads__item-img" src="img/ads-img.png" alt="Ads">
-                                    <div class="ads__item-container">
-                                        <h3 class="ads__item-title">Комната в аренду в 6-комнатной квартире</h3>
-                                        <p class="ads__item-warning">Без залога</p>
-                                        <p class="ads__item-metro">Коммендантский проспект</p>
-                                        <p class="ads__item-address">Невский пр-кт, 156, Санкт-Петербург</p>
-                                        <div class="row">
-                                            <div class="col-sm-4">
-                                                <p class="ads__item-price">9 000 ₽</p>
-                                            </div>
-                                            <div class="offset-1 col-sm-4 col__item-like">
-                                                <a href="#" class="ads__item-like">В избранное</a>
-                                            </div>
-                                            <div class="col-sm-3 col__item-comments">
-                                                <a href="#" class="ads__item-comments">5</a>
+                            <div class="col-lg-3 col-md-5">
+                                <div class="ads__card">
+                                    <img class="card__img" src="img/ads-img.png" alt="Ads">
+                                    <div class="card__container">
+                                        <h3 class="card__title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="card__warning">Без залога</p>
+                                        <p class="card__metro">Коммендантский проспект</p>
+                                        <p class="card__address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="card__bottom-details">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <p class="card__price">9&nbsp;000&nbsp;₽</p>
+                                                </div>
+                                                <div class="offset-1 col-sm-4 col__card-like">
+                                                    <a href="#" class="card__like">В избранное</a>
+                                                </div>
+                                                <div class="col-sm-3 col__card-comments">
+                                                    <a href="#" class="card__comments">5</a>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+                            </div>
+
+                            <div class="col-lg-3 col-md-5">
+                                <div class="ads__card">
+                                    <img class="card__img" src="img/ads-img.png" alt="Ads">
+                                    <div class="card__container">
+                                        <h3 class="card__title">Комната в аренду в 6-комнатной квартире</h3>
+                                        <p class="card__warning">Без залога</p>
+                                        <p class="card__metro">Коммендантский проспект</p>
+                                        <p class="card__address">Невский пр-кт, 156, Санкт-Петербург</p>
+                                        <div class="card__bottom-details">
+                                            <div class="row">
+                                                <div class="col-sm-4">
+                                                    <p class="card__price">9&nbsp;000&nbsp;₽</p>
+                                                </div>
+                                                <div class="offset-1 col-sm-4 col__card-like">
+                                                    <a href="#" class="card__like">В избранное</a>
+                                                </div>
+                                                <div class="col-sm-3 col__card-comments">
+                                                    <a href="#" class="card__comments">5</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="ads__btn-container">
+                                <a href="#" class="ads__btn"><span class="ads__btn__inner">Все&nbsp;объявления</span></a>
                             </div>
 
                         </div>
-
-
-                        <div class="ads__btn">
-                            <a href="#">Все объявления</a>
-                        </div>
-
                     </div>
                 </div>
             </div>
@@ -497,10 +517,12 @@
                             <div class="col-md-6">
                                 <div class="reviews__item">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="img/photo-user.png">
+                                        <div class="col-lg-4 col-md-5">
+                                            <div class="reviews__item__img-container"
+                                                 style="background-image: url('img/photo-user.png')">
+                                            </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-lg-8 col-md-7">
                                             <p class="reviews__item__text">
                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                                 Aenean commodo ligula eget dolor. Aenean massa.
@@ -514,10 +536,12 @@
                             <div class="col-md-6">
                                 <div class="reviews__item">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="img/photo-user.png">
+                                        <div class="col-lg-4 col-md-5">
+                                            <div class="reviews__item__img-container"
+                                                 style="background-image: url('img/photo-user.png')">
+                                            </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-lg-8 col-md-7">
                                             <p class="reviews__item__text">
                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                                 Aenean commodo ligula eget dolor. Aenean massa.
@@ -533,10 +557,12 @@
                             <div class="col-md-6">
                                 <div class="reviews__item">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="img/photo-user.png">
+                                        <div class="col-lg-4 col-md-5">
+                                            <div class="reviews__item__img-container"
+                                                 style="background-image: url('img/photo-user.png')">
+                                            </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-lg-8 col-md-7">
                                             <p class="reviews__item__text">
                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                                 Aenean commodo ligula eget dolor. Aenean massa.
@@ -550,10 +576,12 @@
                             <div class="col-md-6">
                                 <div class="reviews__item">
                                     <div class="row">
-                                        <div class="col-md-4">
-                                            <img src="img/photo-user.png">
+                                        <div class="col-lg-4 col-md-5">
+                                            <div class="reviews__item__img-container"
+                                                 style="background-image: url('img/photo-user.png')">
+                                            </div>
                                         </div>
-                                        <div class="col-md-8">
+                                        <div class="col-lg-8 col-md-7">
                                             <p class="reviews__item__text">
                                                 Lorem ipsum dolor sit amet, consectetuer adipiscing elit.
                                                 Aenean commodo ligula eget dolor. Aenean massa.
@@ -574,7 +602,7 @@
     <footer>
         <div class="container">
             <div class="footer__inner">
-                <div class="row">
+                <div class="row justify-content-center">
                     <div class="col-md-3">
                         <div class="footer__logo">
                             <a href="#"></a>
@@ -583,25 +611,25 @@
 
                     <div class="col-md-3">
                         <div class="footer__section">
-                            <p class="footer__title">Разделы сайта</p>
-                            <a class="footer__list-link" href="#">Найти квартиру</a>
-                            <a class="footer__list-link" href="#">Сдать квартиру</a>
-                            <a class="footer__list-link" href="#">Вопросы и ответы</a>
+                            <p>Разделы сайта</p>
+                            <a href="#">Найти квартиру</a>
+                            <a href="#">Сдать квартиру</a>
+                            <a href="#">Вопросы и ответы</a>
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="footer__section">
-                            <p class="footer__title">Информация</p>
-                            <a class="footer__list-link" href="#">Пользовательское соглашение</a>
-                            <a class="footer__list-link" href="#">Обработка персональных данных</a>
-                            <a class="footer__list-link" href="#">Договор аренды</a>
+                            <p>Информация</p>
+                            <a href="#">Пользовательское соглашение</a>
+                            <a href="#">Обработка персональных данных</a>
+                            <a href="#">Договор аренды</a>
                         </div>
                     </div>
 
                     <div class="col-md-3">
                         <div class="footer__section">
-                            <p class="footer__title">Мы в соцсетях</p>
+                            <p>Мы в соцсетях</p>
                             <div class="footer__social-links">
                                 <div class="social-link_tg"><a href="#"></a></div>
                                 <div class="social-link_vk"><a href="#"></a></div>
@@ -614,17 +642,17 @@
 
             <div class="footer__bottom">
                 <div class="row">
-                    <div class="offset-3 col-md-3">
+                    <div class="offset-lg-3 offset-md-0 col-lg-3 col-md-4">
                         <a href="mailto:equality.hello@gnezdo.ru" class="contacts">
                             hello@gnezdo.ru
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4">
                         <a href="tel:+37544727-70-70" class="contacts">
                             8 (981) 783-45-76
                         </a>
                     </div>
-                    <div class="col-md-3">
+                    <div class="col-lg-3 col-md-4">
                         <p class="copyright">
                             © 2018 «Уютное гнездышко»
                         </p>
