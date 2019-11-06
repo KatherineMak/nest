@@ -36,6 +36,33 @@ header {
     color: #ffffff;
 }
 
+.header-fixed {
+    position: fixed;
+    top: 0;
+    left: 0;
+    align-items: center;
+    background: url("../img/banner-bg.png");
+    background-repeat: no-repeat;
+    animation-name: show_header;
+    animation-duration: 1s;
+    z-index: 1;
+}
+
+header::after + .header-fixed {
+    content: none;
+}
+
+@keyframes show_header {
+    0%{
+        opacity: 0;
+        top: -70px;
+    }
+    100%{
+        opacity: 1;
+        top: 0;
+    }
+}
+
 .header__inner {
     display: flex;
     justify-content: space-between;
@@ -106,6 +133,10 @@ header::after {
     background-repeat: no-repeat;
     background-position-x: 235px;
 
+}
+
+.menu-toggle {
+    display: none;
 }
 
 .select-items {

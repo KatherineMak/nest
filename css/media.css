@@ -9,11 +9,15 @@
     }
 
     .search__col-middle {
-        width: 264px;
+        width: 260px;
     }
 
     .search-form__input_sm {
-        width: 64px;
+        width: 65px;
+    }
+
+    .search-form__tab-rooms {
+        width: 247px;
     }
 
     .search-form__tab li label {
@@ -22,10 +26,13 @@
         padding-left: 12px;
     }
 
+    .search-form__tab-rooms li:nth-child(5) label {
+        width: 75px;
+    }
+
     .search-form__btn {
         width: 200px;
     }
-
 
     /* about */
 
@@ -35,7 +42,71 @@
 
 }
 
+@media (min-width: 993px) {
+    .menu-btn {
+        display: block;
+    }
+}
+
 @media (max-width: 992px) {
+
+    /* header */
+
+    .menu-toggle {
+        display: inline-block;
+        border: none;
+        background-color: transparent;
+        padding: 0;
+    }
+
+    .menu-toggle:focus {
+        outline: none;
+    }
+
+    .menu-toggle:hover span{
+        background-color: #38edce;
+    }
+
+    .menu-toggle span {
+        height: 3px;
+        display: block;
+        background-color: #36d1b2;
+        width: 30px;
+    }
+
+    .menu-toggle span + span {
+        margin-top: 6px;
+    }
+
+    .header__part {
+        position: relative;
+    }
+
+    .menu-btn {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        padding: 30px 20px;
+        background-color: #868686;
+        z-index: 1;
+        border-radius: 4px;
+    }
+
+    .menu-btn a{
+        border: none;
+        margin: 10px 0;
+    }
+
+    .header__btn {
+        font-size: 16px;
+        color: #ffffff;
+    }
+
+    .header__btn_border {
+        padding: 10px 0;
+    }
+
     /* banner */
 
     .banner__inner {
@@ -113,22 +184,7 @@
 
 }
 
-@media (max-width: 770px) {
-
-    /* banner */
-
-    .header__inner {
-        display: block;
-    }
-
-    .header__part {
-        justify-content: space-between;
-    }
-
-    .header__part:nth-child(2) {
-        justify-content: center;
-        margin-top: 20px;
-    }
+@media (max-width: 767px) {
 
     /*about*/
 
@@ -147,8 +203,12 @@
 
     /* how */
 
-    .tab button {
-        display: inline-block;
+    .tab {
+        display: flex;
+    }
+
+    .tab button.active:after {
+        content: none;
     }
 
     .tabcontent__point {
@@ -159,6 +219,12 @@
 
     .card__title {
         text-align: center;
+    }
+
+    .ads__card {
+        max-width: 420px;
+        margin-right: auto;
+        margin-left: auto;
     }
 
     /* reviews */
@@ -208,4 +274,65 @@
         text-align: center;
     }
 
+}
+
+@media (max-width: 520px) {
+
+    .title_gray {
+        font-size: 28px;
+    }
+
+    /* header */
+
+    .header__part {
+        display: block;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .logo {
+        padding-bottom: 20px;
+    }
+
+    .menu-toggle {
+        padding: 30px 0 0;
+    }
+
+    /* banner */
+
+    .search-form__title {
+        padding-top: 30px;
+        font-size: 28px;
+    }
+
+    /* about */
+
+    .services__social {
+        display: block;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .services__btn {
+        display: inline-block;
+        margin: 20px 0;
+    }
+
+    /* how */
+
+    .tab button {
+        font-size: 14px;
+    }
+
+    .tab button.active {
+        font-size: 14px;
+    }
+
+    /* ads */
+
+    .ads__card {
+        max-width: 310px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
