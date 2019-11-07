@@ -156,7 +156,9 @@
     }
 
     .search-form__tab li label {
-        width: 121px;
+        width: 116px;
+        margin: 0;
+        padding: 0;
     }
 
     .search-form__tab li:nth-child(2n) label {
