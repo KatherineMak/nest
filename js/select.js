@@ -1,11 +1,11 @@
-var x, i, j, selElmnt, a, b, c;
+var x, i, j, selElmnt, a, b, c, constOption;
 /* Look for any elements with the class "custom-select": */
 x = document.getElementsByClassName("search-form__select");
 for (i = 0; i < x.length; i++) {
     selElmnt = x[i].getElementsByTagName("select")[0];
     /* For each element, create a new DIV that will act as the selected item: */
     a = document.createElement("DIV");
-    a.setAttribute("class", "select-selected");
+    a.setAttribute("class", "search-form__select-selected");
     a.innerHTML = selElmnt.options[selElmnt.selectedIndex].innerHTML;
     x[i].appendChild(a);
     /* For each element, create a new DIV that will contain the option list: */
@@ -45,7 +45,11 @@ for (i = 0; i < x.length; i++) {
         e.stopPropagation();
         closeAllSelect(this);
         this.nextSibling.classList.toggle("select-hide");
+        constOption = this.innerHTML;
+        this.innerHTML = "Тип жилья";
+        // constOption.innerHTML = "Тип жилья";
         this.classList.toggle("select-arrow-active");
+        this.innerHTML = constOption;
     });
 }
 
@@ -54,7 +58,7 @@ function closeAllSelect(elmnt) {
      except the current select box: */
     var x, y, i, arrNo = [];
     x = document.getElementsByClassName("select-items");
-    y = document.getElementsByClassName("select-selected");
+    y = document.getElementsByClassName("search-form__select-selected");
     for (i = 0; i < y.length; i++) {
         if (elmnt == y[i]) {
             arrNo.push(i)

@@ -1,5 +1,5 @@
 window.onscroll = function showHeader() {
-    var header = document.querySelector('.header');
+    var header = $('.header').get(0);
     console.log(header);
     if(window.pageYOffset > 400) {
         header.classList.add("header-fixed");
@@ -7,6 +7,10 @@ window.onscroll = function showHeader() {
         header.classList.remove("header-fixed");
     }
 };
+
+$(document).ready(function() {
+    $().UItoTop({ easingType: 'easeOutQuart' });
+});
 
 $(function() {
 

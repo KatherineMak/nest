@@ -8,6 +8,10 @@
         width: 260px;
     }
 
+    .search__col:nth-child(3n) {
+         width: 200px;
+    }
+
     .search__col-middle {
         width: 260px;
     }
@@ -24,6 +28,18 @@
         width: 100px;
         margin-right: 0;
         padding-left: 12px;
+    }
+
+    .search-form__tab-rooms li label {
+        margin-left: 0;
+    }
+
+    .search-form__group {
+        margin-left: 0;
+    }
+
+    .search-form__checkbox-container {
+        width: 130px;
     }
 
     .search-form__tab-rooms li:nth-child(5) label {

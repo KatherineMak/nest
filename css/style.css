@@ -43,9 +43,11 @@ header {
     align-items: center;
     background: url("../img/banner-bg.png");
     background-repeat: no-repeat;
+    background-size: cover;
     animation-name: show_header;
     animation-duration: 1s;
     z-index: 1;
+    width: 100%;
 }
 
 header::after + .header-fixed {
@@ -296,6 +298,7 @@ header::after {
 
 .search-form__group {
     display: inline-flex;
+    margin-left: -2px;
 }
 
 .checkbox {
@@ -363,6 +366,7 @@ header::after {
     list-style-type:none;
     margin: 0;
     padding:0;
+    width: 242px;
 }
 .search-form__tab li {
     float: left;
@@ -406,6 +410,7 @@ header::after {
     list-style-type:none;
     margin: 0;
     padding:0;
+    width: 242px;
 }
 .search-form__tab-rooms li {
     float: left;
@@ -415,6 +420,7 @@ header::after {
 }
 
 .search-form__tab-rooms li label {
+    margin-left: -2px;
     width: 42px;
     height: 41px;
     padding: 10px 15px;
