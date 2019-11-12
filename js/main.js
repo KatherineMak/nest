@@ -1,6 +1,12 @@
-window.onscroll = function showHeader() {
+window.onscroll = function showToTop() {
+    var toTop = $('.to-top').get(0);
+    if(window.pageYOffset > 500) {
+        toTop.classList.add("to-top-show");
+    } else {
+        toTop.classList.remove("to-top-show");
+    }
+
     var header = $('.header').get(0);
-    console.log(header);
     if(window.pageYOffset > 400) {
         header.classList.add("header-fixed");
     } else {
@@ -8,18 +14,41 @@ window.onscroll = function showHeader() {
     }
 };
 
-$(document).ready(function() {
-    $().UItoTop({ easingType: 'easeOutQuart' });
-});
-
 $(function() {
 
     $("#defaultOpen").get(0).click();
 
+    // select
+
+    $('.select').selectric();
+
+    // menu
+
     $(".menu-toggle").click(function(){
-        $(this).toggleClass("active");
-        $(".menu-btn").slideToggle(400);
-    })
+        $(".menu").toggleClass("is-active");
+    });
+
+    $(".btn-close").click(function(){
+        $(".menu").toggleClass("is-active");
+    });
+
+    // go to top
+
+    $(".to-top").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
+
+    $(".banner__btn").on("click","a", function (event) {
+        event.preventDefault();
+        var id  = $(this).attr('href'),
+        top = $(id).offset().top;
+        $('body,html').animate({scrollTop: top}, 1500);
+    });
+
 
     // poster frame click event
     $(document).on('click','.js-videoPoster',function(ev) {
